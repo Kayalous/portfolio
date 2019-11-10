@@ -1,4 +1,4 @@
 [build]
-base = "portfolio-App/"
-publish = "portfolio-App/build/"
-command = "yarn build"
+base = "portfolio-App"
+publish = "portfolio-App/build"
+command = "npm run build"
