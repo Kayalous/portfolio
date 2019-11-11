@@ -223,7 +223,7 @@ class Projects extends React.Component {
       desc: `Marek is a resposive sample portfolio created to showcase my
       knowledge in HTML 5, CSS 3, and Bootstrap 4.`,
       image: marekimg,
-      previewLink: "https://marek-kayal.netlify.com",
+      previewLink: "https://marek.elkayal.me",
       githubLink: "https://github.com/Kayalous/Marek"
     },
     {
@@ -239,7 +239,7 @@ class Projects extends React.Component {
       the basic Angular functions, including routing, bindings,
       services, and many more.`,
       image: rihannaimg,
-      previewLink: "https://rihanna-kayal.netlify.com",
+      previewLink: "https://rihanna.elkayal.me",
       githubLink: "https://github.com/Kayalous/Rihanna"
     },
     {
@@ -252,7 +252,7 @@ class Projects extends React.Component {
       ],
       desc: `Used RESTful API (NewsAPI) to fetch current news, and allow users to filter them based on the genre, and the country of publication.`,
       image: newsimg,
-      previewLink: "https://news-kayal.netlify.com",
+      previewLink: "https://news.elkayal.me",
       githubLink: "https://github.com/Kayalous/News"
     }
   ];
