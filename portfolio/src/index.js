@@ -20,7 +20,8 @@ import {
   FaEnvelope,
   FaRegEnvelope,
   FaGithubSquare,
-  FaFile
+  FaFile,
+  FaFireAlt
 } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
 import "jquery";
@@ -34,6 +35,7 @@ import "./aos.css";
 import marekimg from "./img/marek.jpg";
 import rihannaimg from "./img/rihanna.jpg";
 import newsimg from "./img/news.jpg";
+import gamershareimg from "./img/gamershare.png";
 
 AOS.init();
 class Navbar extends React.Component {
@@ -254,6 +256,21 @@ class Projects extends React.Component {
       image: newsimg,
       previewLink: "https://news.elkayal.me",
       githubLink: "https://github.com/Kayalous/News"
+    },
+    {
+      name: "Gamer Share",
+      madeWith: [
+        <FaFireAlt className="project-icon js" />,
+        <FaHtml5 className="project-icon html5" />,
+        <FaCss3Alt className="project-icon css3" />,
+        <FaBootstrap className="project-icon bootstrap" />,
+        <FaJsSquare className="project-icon js" />
+      ],
+      desc: `I made this using Firebase. This project features a fully fledged login system, and google classrom like rooms where anyone can create, and manage their own rooms and invite their friends into them.
+       I also used IGDB which is an API provider that helped me procedually insert images for the games without the users having to upload them theirselves.`,
+      image: gamershareimg,
+      previewLink: "https://gamershare.elkayal.me",
+      githubLink: "https://github.com/Kayalous"
     }
   ];
   render() {
