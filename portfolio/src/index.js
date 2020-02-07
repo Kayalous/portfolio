@@ -21,7 +21,12 @@ import {
   FaRegEnvelope,
   FaGithubSquare,
   FaFile,
-  FaFireAlt
+  FaFireAlt,
+  FaPhp,
+  FaLaravel,
+  FaWordpress,
+  FaFigma,
+  FaAdobe
 } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
 import "jquery";
@@ -148,25 +153,43 @@ class Hero extends React.Component {
                 .changeDeleteSpeed(20)
                 .typeString("Hello, I'm <span>Abdulrhman Elkayal</span><br/>")
                 .pauseFor(200)
-                .typeString("Front-En")
+                .typeString("Full-St")
                 .deleteChars(2)
-                .typeString("end w")
+                .typeString("stack w")
                 .pauseFor(100)
-                .deleteChars(6)
-                .typeString("end web ")
+                .deleteChars(8)
+                .typeString(" Stack Web Developer.")
+                .pauseFor(2000)
+                .deleteChars(25)
+                .pauseFor(200)
+                .typeString("Web Designer.")
+                .pauseFor(2000)
+                .deleteChars(13)
+                .pauseFor(200)
+                .typeString("UI/UX Designer.")
+                .pauseFor(2000)
+                .deleteChars(15)
+                .pauseFor(200)
+                .typeString("Full Stack Web Developer.")
+                .pauseFor(2000)
+                .deleteChars(25)
                 .start();
               setInterval(function() {
                 typewriter
-                  .typeString("developer")
+                  .typeString("Web Designer.")
                   .pauseFor(2000)
-                  .deleteChars(9)
+                  .deleteChars(13)
                   .pauseFor(200)
-                  .typeString("designer")
+                  .typeString("UI/UX Designer.")
                   .pauseFor(2000)
-                  .deleteChars(8)
+                  .deleteChars(15)
+                  .pauseFor(200)
+                  .typeString("Full Stack Web Developer.")
+                  .pauseFor(2000)
+                  .deleteChars(25)
                   .pauseFor(200)
                   .start();
-              }, 4000);
+              }, 8800);
             }}
           />
         </h1>
@@ -355,8 +378,8 @@ class Projects extends React.Component {
 class Skills extends React.Component {
   skills = [
     {
-      title: "Responsive web development",
-      desc: "HTML5, CSS3, Sass, Bootstrap 4",
+      title: "Front End Development",
+      desc: "HTML5, CSS3, Sass, Bootstrap 4, TailwindCSS",
       Icon: <FaCode className="skill-icon code" />,
       fadeInDelay: 0,
       fadeInDirection: ""
@@ -369,53 +392,53 @@ class Skills extends React.Component {
       fadeInDirection: ""
     },
     {
-      title: "Angular",
-      desc: "",
-      Icon: <FaAngular className="skill-icon angular" />,
-      fadeInDelay: 0,
-      fadeInDirection: ""
-    },
-    {
-      title: "React",
-      desc: "",
+      title: "Front End JS Frameworks",
+      desc: "React, Angular",
       Icon: <FaReact className="skill-icon react" />,
       fadeInDelay: 0,
       fadeInDirection: ""
     },
     {
-      title: "Python",
-      desc: "",
-      Icon: <FaPython className="skill-icon python" />,
+      title: "Back End Development",
+      desc: "PHP, NodeJS",
+      Icon: <FaPhp className="skill-icon python" />,
       fadeInDelay: 0,
       fadeInDirection: ""
     },
     {
-      title: "Java",
-      desc: "",
-      Icon: <FaJava className="skill-icon java" />,
+      title: "Back End Frameworks",
+      desc: "Laravel, Express",
+      Icon: <FaLaravel className="skill-icon laravel" />,
       fadeInDelay: 0,
       fadeInDirection: ""
     },
     {
       title: "Database managment systems",
-      desc: "MySQL, SQLite, MongoDB",
+      desc: "MySQL, SQLite, MongoDB, Firebase/Firestore",
       Icon: <FaDatabase className="skill-icon db" />,
       fadeInDelay: 0,
       fadeInDirection: ""
     },
     {
-      title: "Game development",
-      desc: "Unity, Unreal engine 4",
-      Icon: <FaGamepad className="skill-icon gamepad" />,
+      title: "Content Management Systems",
+      desc: "Wordpress",
+      Icon: <FaWordpress className="skill-icon python" />,
+      fadeInDelay: 0,
+      fadeInDirection: ""
+    },
+    {
+      title: "Design tools",
+      desc: "Adobe XD, Illustrator, Figma",
+      Icon: <FaAdobe className="skill-icon adobe" />,
       fadeInDelay: 0,
       fadeInDirection: ""
     }
   ];
   otherSkills = [
-    { name: "GIT", fadeInDelay: 0 },
+    { name: "GIT/Github", fadeInDelay: 0 },
     { name: "JSON", fadeInDelay: 0 },
     { name: "AJAX", fadeInDelay: 0 },
-    { name: "C#", fadeInDelay: 0 }
+    // { name: "C#", fadeInDelay: 0 }
   ];
 
   render() {
@@ -507,15 +530,15 @@ class About extends React.Component {
                   data-aos-delay="400"
                 >
                   <span className="about-block developer noselect">
-                    Frontend Developer
+                    Fullstack Developer
                   </span>
                   ,{" "}
                   <span className="about-block freelancer noselect">
                     Freelancer
                   </span>
                   , and{" "}
-                  <span className="about-block game-dev noselect">
-                    Game Developer
+                  <span className="about-block designer noselect">
+                    Designer
                   </span>
                   .
                   <br />
