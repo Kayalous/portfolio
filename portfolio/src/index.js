@@ -41,6 +41,7 @@ import marekimg from "./img/marek.jpg";
 import rihannaimg from "./img/rihanna.jpg";
 import newsimg from "./img/news.jpg";
 import gamershareimg from "./img/gamershare.png";
+import eduimg from "./img/edu.png";
 
 AOS.init();
 class Navbar extends React.Component {
@@ -250,6 +251,19 @@ class Projects extends React.Component {
       image: marekimg,
       previewLink: "https://marek.elkayal.me",
       githubLink: "https://github.com/Kayalous/Marek"
+    },
+    {
+      name: "Edu",
+      madeWith: [
+        <FaHtml5 className="project-icon html5" />,
+        <FaCss3Alt className="project-icon css3" />,
+        <FaBootstrap className="project-icon bootstrap" />,
+        <FaJsSquare className="project-icon js" />
+      ],
+      desc: `Edu is a fully responsive sample online education website.`,
+      image: eduimg,
+      previewLink: "https://edu.elkayal.me",
+      githubLink: "https://github.com/Kayalous/edu"
     },
     {
       name: "Rihanna",
