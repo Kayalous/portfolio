@@ -27,6 +27,7 @@ import {
   FaWordpress,
   FaFigma,
   FaAdobe,
+  FaVuejs,
 } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
 import "jquery";
@@ -43,6 +44,7 @@ import newsimg from "./img/news.jpg";
 import gamershareimg from "./img/gamershare.png";
 import eduimg from "./img/edu.png";
 import veedrosimg from "./img/veedros.png";
+import twitterimg from "./img/twitter.png";
 
 AOS.init();
 class Navbar extends React.Component {
@@ -224,6 +226,20 @@ class Projects extends React.Component {
       githubLink: false,
     },
     {
+      name: "Twitter Clone",
+      madeWith: [
+        <FaLaravel className="project-icon laravel" />,
+        <FaHtml5 className="project-icon html5" />,
+        <FaCss3Alt className="project-icon css3" />,
+        <FaVuejs className="project-icon" style={{ color: "#41B883" }} />,
+        <FaJsSquare className="project-icon js" />,
+      ],
+      desc: `A simple Twitter clone made using TailwindCSS, VueJS, and Laravel.`,
+      image: twitterimg,
+      previewLink: "https://twitter.elkayal.me",
+      githubLink: "https://github.com/Kayalous/twitter-clone",
+    },
+    {
       name: "Gamer Share",
       madeWith: [
         <FaFireAlt className="project-icon js" />,
@@ -282,19 +298,19 @@ class Projects extends React.Component {
       previewLink: "https://rihanna.elkayal.me",
       githubLink: "https://github.com/Kayalous/Rihanna",
     },
-    {
-      name: "News",
-      madeWith: [
-        <FaHtml5 className="project-icon html5" />,
-        <FaCss3Alt className="project-icon css3" />,
-        <FaBootstrap className="project-icon bootstrap" />,
-        <FaJsSquare className="project-icon js" />,
-      ],
-      desc: `Used RESTful API (NewsAPI) to fetch current news, and allow users to filter them based on the genre, and the country of publication.`,
-      image: newsimg,
-      previewLink: "https://news.elkayal.me",
-      githubLink: "https://github.com/Kayalous/News",
-    },
+    // {
+    //   name: "News",
+    //   madeWith: [
+    //     <FaHtml5 className="project-icon html5" />,
+    //     <FaCss3Alt className="project-icon css3" />,
+    //     <FaBootstrap className="project-icon bootstrap" />,
+    //     <FaJsSquare className="project-icon js" />,
+    //   ],
+    //   desc: `Used RESTful API (NewsAPI) to fetch current news, and allow users to filter them based on the genre, and the country of publication.`,
+    //   image: newsimg,
+    //   previewLink: "https://news.elkayal.me",
+    //   githubLink: "https://github.com/Kayalous/News",
+    // },
   ];
   render() {
     return (
@@ -397,7 +413,7 @@ class Skills extends React.Component {
     },
     {
       title: "Front End JS Frameworks",
-      desc: "React, Angular",
+      desc: "React, Angular, Vue",
       Icon: <FaReact className="skill-icon react" />,
       fadeInDelay: 0,
       fadeInDirection: "",
