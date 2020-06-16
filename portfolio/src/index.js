@@ -45,6 +45,9 @@ import gamershareimg from "./img/gamershare.png";
 import eduimg from "./img/edu.png";
 import veedrosimg from "./img/veedros.png";
 import twitterimg from "./img/twitter.png";
+import blob1 from "./img/blob-1.svg";
+import blob2 from "./img/blob-2.svg";
+import blob3 from "./img/blob-3.svg";
 
 AOS.init();
 class Navbar extends React.Component {
@@ -198,15 +201,9 @@ class Hero extends React.Component {
     );
   }
 }
-class Slices extends React.Component {
+class Blob extends React.Component {
   render() {
-    return (
-      <div className="slices">
-        <div className="slice-1" />
-        <div className="slice-2" />
-        <div className="slice-3" />
-      </div>
-    );
+    return <img className="img-fluid blob-1" src={blob1} alt="" />;
   }
 }
 class Projects extends React.Component {
@@ -314,7 +311,8 @@ class Projects extends React.Component {
   ];
   render() {
     return (
-      <section className="projects" id="projects">
+      <section className="projects position-relative" id="projects">
+        <img className="img-fluid blob-3" src={blob3} alt="" />
         <div className="container container-mine">
           <h1
             className="projects-header mt-5"
@@ -391,6 +389,7 @@ class Projects extends React.Component {
             ))}
           </div>
         </div>
+        <img className="img-fluid blob-4" src={blob3} alt="" />
       </section>
     );
   }
@@ -469,7 +468,8 @@ class Skills extends React.Component {
     }
 
     return (
-      <section className="skills" id="skills">
+      <section className="skills position-relative" id="skills">
+        <img className="img-fluid blob-2" src={blob2} alt="" />
         <div className="container skills-container">
           <h1
             className="skills-header mb-5"
@@ -487,7 +487,7 @@ class Skills extends React.Component {
                 data-aos-delay={skill.fadeInDelay}
                 key={i}
               >
-                <div className="skill">
+                <div className="skill bg-white">
                   {skill.Icon}
                   <br />
                   <h3>{skill.title}</h3>
@@ -564,11 +564,30 @@ class Footer extends React.Component {
   render() {
     let year = new Date().getFullYear();
     return (
-      <footer className="footer mt-5">
-        <h4>
-          Abdulrhman Elkayal | <span>©{year}</span>{" "}
-        </h4>
-      </footer>
+      <>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          style={{
+            marginTop: -2.5 + "rem",
+            width: 100 + "%",
+            height: 12 + "rem",
+            display: "block",
+          }}
+        >
+          <path
+            className="footer-top"
+            fill="#747FE0"
+            d="M0,224L40,218.7C80,213,160,203,240,213.3C320,224,400,256,480,240C560,224,640,160,720,144C800,128,880,160,960,149.3C1040,139,1120,85,1200,96C1280,107,1360,181,1400,218.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
+        <footer className="footer py-3">
+          <h4>
+            Abdulrhman Elkayal | <span>©{year}</span>{" "}
+          </h4>
+        </footer>
+      </>
     );
   }
 }
@@ -576,7 +595,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="global-body" id="customScrollbar">
-        <Slices />
+        <Blob />
         <Navbar />
         <Hero />
         <Skills />
